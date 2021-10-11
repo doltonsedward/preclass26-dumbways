@@ -1,0 +1,24 @@
+callback digunakan untuk menghandle banyak event
+promise asynchronous dan bertahap
+
+promise === objek
+fetch === untuk melakukan ajax request. asynchronous javascript 
+
+promise.all === mengembalikan masing2 dari post nya
+promise.race === mengembalikan promise yang paling dluan selesai
+
+async 
+await
+
+
+
+
+
+
+
+
+apa itu promise 
+sebuah objek yang memungkinkan ktia mengeksekusi asynchronous
+
+apa itu async await
+syntax khusus yang digunakan untuk bekerja dengan Promise agar lebih mudah digunakan

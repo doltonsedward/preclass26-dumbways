@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:root {
+    --boder-trendy: 13px;
+}
+
+:focus { outline: none }
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background: url('glassmorphism-bg.png') no-repeat center fixed;
+}
+
+input {
+    font-size: 16px;
+}
+
+button, input { border: none }
+
+button { font-size: 17px }
+
+.container, .number-input, .wrapper-output {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-radius: 12px;
+    border: 2px solid rgba(209, 213, 219, 0.3);
+    box-shadow: 0 8px 30px rgba(22, 28, 124, 0.25);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 20px;
+    padding: 30px 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.in_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+.number-input {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.number-input, .section-button button {
+    padding: 8px 12px;
+    border-radius: var(--boder-trendy);
+}
+
+.section-button button {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to bottom, #8bd39d, #6da08b);
+    box-shadow: 0 8px 40px rgba(22, 28, 124, 0.25);
+}
+
+.wrapper-output {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    max-width: 90%;
+    min-height: 200px;
+    margin: 20px auto;
+}
+
+@media (max-width: 600px) {
+    .in_container {
+        height: 100%;
+    }
+}

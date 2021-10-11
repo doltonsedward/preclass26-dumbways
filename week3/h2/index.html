@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous vs Synchronous</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/responsif.css">
+</head>
+<body>
+    <div class="container row">
+        <div class="in_container first">
+            <h1>Synchronous vs Asynchronous</h1>
+            <br>
+            <input type="text" class="number-input" id="numberInput" placeholder="Range of number..">
+            <br>
+            <div class="section-button">
+                <button onclick="result(synchronousFunc)">Synchronous</button>
+                <button onclick="result(asynchronousFunc)">Asynchronous</button>
+            </div>
+        </div>
+        <div class="in_container second">
+            <div class="wrapper-output wrapper-output__odd">
+                <p>Odd: </p>
+                <div id="outputOdd">
 
+                </div>
+            </div>
+
+            <div class="wrapper-output wrapper-output__even">
+                <p>Even: </p>
+                <div id="outputEven">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
