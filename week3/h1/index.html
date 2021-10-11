@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="in-container first">
+            <label>
+                <h1>Odd Even Generator</h1>
+                <input type="number" class="number-input" id="numberInput" name="input" autocomplete="none" placeholder="Input your number..">
+            <label>
+            <br>
+            <button class="btn-odd" onclick="showResult(generateOdd, numberInput)">Odd</button>
+            <button class="btn-even" onclick="showResult(generateEven, numberInput)">Even</button>
+        </div>
+        <div class="in-container second" id="containerOfGenerator">
+            <div class="wrapper-output_odd">
+                <p>Odd</p>
+                <div id="outputOdd">
 
+                </div>
+                <div id="wrapperBtnResetOdd"></div>
+            </div>
+            <br>
+            <div class="wrapper-output_even">
+                <p>Even</p>
+                <div id="outputEven">
+
+                </div>
+                <div id="wrapperBtnResetEven"></div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

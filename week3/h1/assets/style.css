@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:root {
+    --border-trendy: 10px;
+    --border-smooth: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('glass.jpg');
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+/* shortcut */
+.text-center { text-align: center }
+/* close */
+
+/* change default behavior css */
+:focus { outline: none; }
+
+input, button {
+    font-size: 16px;
+    font-family: 'Poppins';
+    border: none;
+}
+
+button { cursor: pointer }
+/* close */
+
+input, button {
+    padding: 5px 10px;
+    border-radius: var(--border-trendy);
+}
+
+h1  {
+    color: rgb(73, 73, 73);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.in-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.in-container.first { flex: 35% }
+
+.number-input {
+    background-color: transparent;
+    margin: 10px 0;
+    border-bottom: 1px solid rgb(173, 173, 173);
+}
+
+.in-container.first button { 
+    color: aliceblue;
+    font-weight: bold;
+    margin: 10px 0; 
+}
+
+.btn-odd {
+    background: linear-gradient(to bottom, #4feb76, #29ca52);
+    border: 1px solid #29ca52;
+}
+
+.btn-odd:focus {
+    background: #23b347;
+    border: 1px solid #29ca52;
+    box-shadow: inset 0 2px 5px rgb(80, 80, 80);
+}
+
+.btn-even {
+    background: linear-gradient(to bottom, #3ca5e2, #2783b8);
+    border: 1px solid #2783b8;
+}
+
+.btn-even:focus {
+    background: #2783b8;
+    border: 1px solid #2783b8;
+    box-shadow: inset 0 2px 5px rgb(80, 80, 80);
+}
+
+.in-container.second {
+    padding: 20px;
+    flex: 65%;
+}
+
+.reset-btn {
+    display: block;
+    margin: 10px auto;
+}
+
+.wrapper-output_odd, .wrapper-output_even {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 8px;
+    width: 500px;
+    max-width: 90%;
+    min-height: 200px;
+    border-radius: var(--border-trendy);
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+@media (max-width: 750px) {
+    .container {
+        flex-direction: column;
+    }
+}
